@@ -1,0 +1,251 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./font/space-mono-v13-latin-700.woff2') format('woff2');
+}
+
+body,
+html {
+    font-family: 'Space Mono';
+    height: 100%;
+    background-color: #C5E4E7;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 28px;
+    padding: 40px 40px 10px 40px;
+    .left_parents {
+    padding: 40px;
+
+        form {
+            label {
+                font-size: 16px;
+                color: #5E7A7D;
+                line-height: 23.7px;
+            }
+        }
+    }
+
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    /* padding: 48px; */
+    justify-content: center;
+}
+
+
+.img_logo {
+    width: 86.66px;
+    height: 53.14px;
+    margin-bottom: 60px;
+}
+
+.input {
+    width: 345px;
+    text-align: right;
+    height: 48px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    caret-color: #26C2AE;
+    font-size: 24px;
+    line-height: 35.54px;
+    
+    font-family: 'Space Mono';
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+.invalid-input {
+    border: 2px solid red;
+}
+
+.label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    font-family: 'Space Mono';
+    transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+    outline: none;
+    border-color: #26C2AE;
+}
+
+.input-group:hover .label,
+.input:focus {
+    color: #05060fc2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-group {
+    position: relative;
+    margin-top: 6px;
+}
+
+svg {
+    position: absolute;
+    left: 19px;
+    top: 16px;
+    z-index: 10;
+}
+
+.button {
+    margin-bottom: 40px;
+    margin-top: 16px;
+
+    button {
+        width: 117px;
+        height: 48px;
+        border: none;
+        cursor: pointer;
+        transition: all .5s ease;
+        font-family: 'Space Mono';
+        font-size: 24px;
+        border-radius: 4px;
+        background-color: #00474B;
+        color: #fff;
+    }
+
+    button:hover {
+        background-color: #26C2AE;
+        color: #00474B;
+    }
+
+    .card1 {
+        display: flex;
+        gap: 14px;
+    }
+
+    .card2 {
+        display: flex;
+        gap: 14px;
+        margin-top: 16px;
+    }
+}
+
+.input_value {
+    width: 83px;
+    text-align: right;
+    height: 45px;
+    background-color: #05060f0a;
+    border-radius: 4px;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 22px;
+    caret-color: #26C2AE;
+    line-height: 35.54px;
+    font-family: 'Space Mono';
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.input_value:hover,
+.input_value:focus,
+.input_value-group:hover .input_value {
+    outline: none;
+    border-color: #26C2AE;
+}
+
+.input_value-group:hover .label,
+.input_value:focus {
+    color: #05060fc2;
+}
+.right_parents {
+    background: #00474B;
+    height: 317px;
+    width: 413px;
+    border-radius:12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Space Mono';
+        
+        div{
+            line-height: 10.25px ;
+        }
+        span{
+            font-size: 48px;
+            color: #26C2AE;
+        }
+        p{
+            font-size: 13px;
+            color: #7F9D9F;
+        }   
+        h2{
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+    .bottom{
+        button{
+        width: 100%;
+        background: #26C2AE;
+        border:none;
+        padding: 15px 40px ;
+        border-radius:10px;
+        cursor: pointer;
+        transition: all .5s ease;
+        font-family: 'Space Mono';
+        font-size: 20px;
+        color: #00474B;
+        }
+        button:hover{
+            background-color: #9FE8DF;
+            color: #00474B;
+        }
+    }
+}
+
+
+#error_1{
+    color: red;
+    display: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#error_2 {
+    color: red;
+    display: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+button.active {
+        background-color: #26C2AE;
+            color: #00474B;
+}
